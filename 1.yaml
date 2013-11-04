@@ -1,0 +1,9 @@
+null: ~
+string: string
+quoted_string: "some \" string with \n"
+"quoted key\n": blah
+number: 1.2
+number2: -2
+number3: "-3"
+array: [1, 2, "tiga"]
+hash: {foo: 1, bar: baz, qux: []}
