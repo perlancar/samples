@@ -1,0 +1,31 @@
+=head1 SYNOPSIS
+
+ use 5.010;
+ use strict;
+
+ use SomeModule();
+
+ blah(1, 2, 3);
+
+
+=head1 DESCRIPTION
+
+This module is blah blah blah blah blah blah blah blah blah blah blah blah blah
+blah blah blah blah blah blah blah blah blah.
+
+
+=head1 FUNCTIONS
+
+=head2 blah($str[, \%opts]) => STR
+
+Options:
+
+=over
+
+=item * opt1 => STR
+
+=item * opt2 => STR
+
+=back
+
+=cut
