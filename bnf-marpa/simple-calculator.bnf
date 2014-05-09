@@ -1,0 +1,10 @@
+Expression ::= Term            action => ::first
+Term ::= Factor                action => ::first
+       | Term '+' Term         action => do_add
+Factor ::= Number              action => ::first
+         | Factor '*' Factor   action => do_multiply
+
+Number ~ digits
+digits ~ [\d]+
+:discard ~ whitespace
+whitespace ~ [\s]+
