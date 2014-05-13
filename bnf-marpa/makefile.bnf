@@ -1,0 +1,23 @@
+# by peter stuifzand
+
+:start        ::= makefile
+ 
+makefile      ::= recipes
+recipes       ::= recipe+                                                     action => do_list
+recipe        ::= target_line command_lines possible_newlines                 action => do_recipe separator => ws proper => 0
+target_line   ::= target target_sep dependencies newline                      action => do_targetline
+command_lines ::= commands
+possible_newlines ::= newline*
+target        ::= filename
+dependencies  ::= filename*                                                   action => do_list separator => ws      proper => 0
+commands      ::= command+                                                    action => do_list separator => newline proper => 0
+target_sep    ::= (':' ws)
+ 
+command       ~ tab commandline
+ 
+filename      ~ [^:\s]+
+tab           ~ [\x09]
+commandline   ~ [^\n]+
+newline       ~ [\n]
+ 
+ws            ~ [ ]*

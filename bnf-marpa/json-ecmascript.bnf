@@ -1,0 +1,66 @@
+# ==================================
+# ECMAScript Script Lexical String Grammar
+# ==================================
+#
+# The source text of an ECMAScript program is first converted into a sequence of input elements, which are
+# tokens, line terminators, comments, or white space.
+#
+:start ::= JSONText
+:default ::= action => [values]
+lexeme default = action => [start,length,value] forgiving => 1
+ 
+#
+# JSON Syntactic Grammar
+#
+JSONText        ::= JSONValue
+JSONValue       ::= JSONNullLiteral | JSONBooleanLiteral | JSONObject | JSONArray | JSONString | JSONNumber
+JSONObject      ::= '{' '}' | '{' JSONMemberList '}'
+JSONMember      ::= JSONString ':' JSONValue
+JSONMemberList  ::= JSONMember | JSONMemberList ',' JSONMember
+JSONArray       ::= '[' ']' | '[' JSONElementList ']'
+JSONElementList ::= JSONValue | JSONElementList ',' JSONValue
+ 
+#
+# JSON Lexical Grammar
+#
+JSONWhiteSpace          ~ [\p{IsTAB}\p{IsCR}\p{IsLF}\p{IsSP}]
+JSONString              ~ '"' JSONStringCharactersopt '"'
+JSONStringCharactersopt ~ JSONStringCharacters
+JSONStringCharactersopt ~
+JSONStringCharacters    ~ JSONStringCharacter JSONStringCharactersopt
+JSONStringCharacter     ~ [\p{IsSourceCharacterButNotOneOfDquoteOrBackslashOrU0000ThroughU001F}]
+                        | '\' JSONEscapeSequence # ' for my editor
+JSONEscapeSequence      ~ JSONEscapeCharacter | UnicodeEscapeSequence
+JSONEscapeCharacter     ~ ["/\\bfnrt] # " for my editor
+JSONNumber              ~ minusOpt DecimalIntegerLiteral JSONFractionopt ExponentPartopt
+JSONFraction            ~ '.' DecimalDigits
+JSONNullLiteral         ~ NullLiteral
+JSONBooleanLiteral      ~ BooleanLiteral
+ 
+#
+# Copy/pasted from Program grammar
+#
+DecimalDigits           ~ [\p{IsDecimalDigit}]+
+NullLiteral             ~ 'null'
+BooleanLiteral          ~ 'true' | 'false'
+UnicodeEscapeSequence   ~ 'u' HexDigit HexDigit HexDigit HexDigit
+HexDigit                ~ [\p{IsHexDigit}]
+DecimalIntegerLiteral   ~ '0'
+                        | NonZeroDigit
+                        | NonZeroDigit DecimalDigits
+NonZeroDigit            ~ [\p{IsNonZeroDigit}]
+ExponentPartopt         ~ ExponentPart
+ExponentPartopt         ~
+ExponentPart            ~ ExponentIndicator SignedInteger
+ExponentIndicator       ~ [\p{IsExponentIndicator}]
+SignedInteger           ~ DecimalDigits
+                        | '+' DecimalDigits
+                        | '-' DecimalDigits
+ 
+minusOpt                ~ '-'
+minusOpt                ~
+ 
+JSONFractionopt         ~ JSONFraction
+JSONFractionopt         ~
+ 
+:discard                ~ JSONWhiteSpace
