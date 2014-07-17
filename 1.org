@@ -1,7 +1,9 @@
-* header1                                                              :link:
+* header1                                                               :tag:
 contains an internal link to another part of the document [[blah]]
-* header2
-* header3
+* header2 [#A] [20%]
+- contains priority and progress cookie (percent-style)
+* header3 [1/10]
+- contains progress cookie (fraction-style)
 ** header3.1
 ** header3.2
 ** header3.3
