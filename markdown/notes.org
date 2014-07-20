@@ -1,0 +1,55 @@
+* Markdown::Pod
+Markdown::Pod as of 0.05 does not handle:
+
+** em & en dash
+Note that --- not considering the asterisk --- the actual text
+** delimited block
+~~~
+define foobar() {
+    print "Welcome to flavor country!";
+}
+~~~
+** table
+--------  -----------------------
+keyword   text
+--------  -----------------------
+red       Sunsets, apples, and
+          other red or reddish
+          things.
+
+green     Leaves, grass, frogs
+          and other things it's
+          not easy being.
+--------  -----------------------
+
+translated as-is.
+** horizontal rule
+
+***
+
+currently causes an error: Can't locate object method "horizontal_rule" via
+package "Markdown::Pod::Handler" at
+/home/u1/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.1/Markdent/Role/EventsAsMethods.pm
+line 19, <> line 159.
+** definition list
+apples
+  : Good for making applesauce.
+oranges
+  : Citrus!
+tomatoes
+  : There's no "e" in tomatoe.
+
+translated as-is.
+** line block
+| Line one
+|   Line too
+| Line tree
+* Text::Markdown
+Text::Markdown::Pod as of 1.000031 does not handle:
+
+** em & en dash
+** delimited block
+** table
+** definition list
+** line block
+** math equation
