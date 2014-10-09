@@ -1,0 +1,34 @@
+# various timestamp formats. taken from Org::Parser's test suite. see also timerange.org
+
+* TODO active timestamps
+  - without dow: <2011-03-23 >
+  - without dow & without space: <2011-03-23>
+  - SCHEDULED: <2011-03-16 Wed>
+  - TEST: <2011-03-16 Wed 01:23>
+
+* inactive timestamps
+  - [2011-03-23 ]
+  - [2011-03-23]
+  - [2011-03-23 Wed]
+  - [2011-03-23 Wed 01:23]
+
+* additional tests
+  - <2012-01-11 Wed > # space after dow allowed
+  - [2012-01-11   ] [2012-01-11   Wed   ] # multiple spaces allowed
+
+* event duration
+[2011-03-23 Wed 10:12-11:23]
+
+* repeater & warning period
+[2011-03-23 Wed 10:12 +1d]
+[2011-03-23 Wed 10:12-11:23 +2w]
+[2011-03-23 Wed +3m]
+[2011-03-23 Wed +4y]
+<2011-05-25 Wed ++5m>
+<2011-05-25 Wed .+6m>
+<2011-05-25 Wed +17.1m -13.2d>
+
+# habit-style repeater
+[2011-03-23 Wed 10:12 +1d/2d]
+[2011-03-23 Wed 10:12 +1w/10d]
+[2011-03-23 Wed 10:12-11:23 +2w/3w]
