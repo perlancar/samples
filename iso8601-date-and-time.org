@@ -1,0 +1,29 @@
+* date
+- year: YYYY, e.g. 2015 (negative allowed)
+- calendar date: YYYY-MM-DD (e.g. 2015-01-15) or YYYYMMDD (e.g. 20150115)
+- period: YYYY-MM (e.g. 2015-01) but not YYYYMM
+- week dates: YYYY-Www (e.g. 2015-W45) or YYYYWww (e.g. 2015W05)
+- week date + day: YYYY-Www-D or YYYYWwwD e.g. (2015W45D1, 2010-01-03 is 2009-W53-7)
+- ordinal date: YYYY-DDD or YYYYDDD
+* time
+- hh:mm:ss or hhmmss
+- hh:mm or hhmm
+- hh
+- timezone designator: <time>Z or <time>[+-]hh:mm or <time>[+-]hhmm or <time>[+-]hh
+* combined date & time
+- <date>T<time>
+* duration
+- PnYnMnDTnHnMnS
+- PnW
+- P<date>T<time>
+* time interval
+- <start>/<end>
+- <start>/<duration>
+- <duration>/<end>
+- <duration>
+* repeating time interval
+- Rnn/<interval>
+- R/<interval>
+* truncated representation
+- YY-MM-DD and YYMMDD was in ISO 8601:2000 but removed in ISO 8601:2004
+
