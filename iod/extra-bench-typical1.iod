@@ -1,0 +1,36 @@
+; version: 1.0
+
+; this IOD is used for benchmarking purposes
+
+; this IOD contains +- 3 sections and 20 keys of string values, utilizes no
+; features of IOD, is a perfectly backward compatible INI file, and represents a
+; "typical" real world configuration for a simple application
+
+; this IOD should not be modified/updated (unless for very good reason) as it
+; would make past benchmarks not very useful/comparable to newer benchmarks.
+
+[section1]
+key1_____ = value _________
+key2_____ = value _________
+key3_____ = value _________
+key4_____ = value _________
+key5_____ = value _________
+
+[section2]
+key6_____ = value _________
+key7_____ = value _________
+key8_____ = value _________
+
+[section3]
+key9_____ = value _________
+key10____ = value _________
+key11____ = value _________
+key12____ = value _________
+key13____ = value _________
+key14____ = value _________
+key15____ = value _________
+key16____ = value _________
+key17____ = value _________
+key18____ = value _________
+key19____ = value _________
+key20____ = value _________

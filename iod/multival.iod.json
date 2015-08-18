@@ -1,0 +1,15 @@
+{
+   "section1" : {
+      "name" : [
+         "value",
+         "value2"
+      ]
+   },
+   "section2" : {
+      "name" : [
+         null,
+         "one\ntwo",
+         "three"
+      ]
+   }
+}

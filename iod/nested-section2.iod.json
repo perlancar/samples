@@ -1,0 +1,8 @@
+{
+   "section" : {
+      "sub" : "blah"
+   },
+   "section.sub" : {
+      "name" : "val"
+   }
+}

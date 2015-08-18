@@ -1,0 +1,8 @@
+{
+   "section" : {
+      "name with space" : "value4",
+      "name1" : "value",
+      "name2" : "value with whitespace",
+      "name3" : "value with equal = sign"
+   }
+}

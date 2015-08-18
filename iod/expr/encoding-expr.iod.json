@@ -1,0 +1,11 @@
+{
+   "section1" : {
+      "bar" : "monkey",
+      "foo" : "1"
+   },
+   "section2" : {
+      "baz" : 2,
+      "quux" : "greasemonkey 2",
+      "qux" : "greasemonkey"
+   }
+}

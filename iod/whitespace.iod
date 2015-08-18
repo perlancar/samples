@@ -1,0 +1,10 @@
+[ section ]
+name = value
+ name2 = value2
+name3= value3  value3b
+empty =
+
+;! noop
+; !noop
+; ! noop
+

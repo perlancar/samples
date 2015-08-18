@@ -1,0 +1,198 @@
+; version: 1.0
+
+; this IOD is used for benchmarking purposes
+
+; this IOD contains 10 sections and 100 keys with string values and not much
+; anything else. it should be backward compatible with a basic INI file. size of
+; file: 5120 (5k) bytes.
+
+; this IOD should not be modified/updated (unless for very good reason) as it
+; would make past benchmarks not very useful/comparable to newer benchmarks.
+
+[section1]
+; demonstrate numbers
+key1=1
+key2=Inf
+key3=-100000
+key4=123456789
+key5=0.00000001
+key6="123456789"
+key7=+1.2
+key8=1.2345e10
+key9=-1.2345e-4
+key10=NaN
+
+[section2 with some spaces]
+; demonstrate strings
+key1=""
+key2=
+key3=01string
+key4=a string with spaces
+key5= 01Another String With Spaces
+key6=a quite long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string
+key7 = "A quoted (JSON) string with some escape sequences like \n, \t, \r, and \b. Also \" and \\"
+key8=An unquoted (raw) string will not interpret escape sequences like \n, \t, \r, and \b. Also \" and \\. It can also freely contain =, ', "
+key9=13823912894392850485040598092830923804982342384092382049384280482938409234092380498234820398409283049823
+key10=' '
+
+[section3]
+; indentation and whitespaces
+key1=value
+key1     =value
+key2          =value
+key3               =value
+key4                    =value
+key5=     value
+key6=          value
+key7=               value
+key8=                    value
+     key9     =     value
+          key10          =          value
+
+[section4 with some rather long string as the section name]
+; array/duplicate key names
+key=value1
+key=value2
+key=value3
+key=value4
+key=value5
+key2=value21
+key2=value22
+key2=value23
+key2=value24
+key2=value25
+
+[section5]
+; key names
+key1=value
+key2 with some spaces inside=value
+key3 with some spaces inside   =   value with some spaces too
+key4 with some escape sequences \r\n = value
+key5 with escaped \= =value ; actually equal sign cannot be escaped
+"key5 with quotes\=\\"=value ; nor can the key be quoted
+key6 with some long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name=value
+key7 key name can contain anything but equal sign, including ', ;, [, ], or "=value
+key8_some_underscored_name=value
+key9SomeCamelCasedName=value
+key10 0938384385764365345453495839478234762376823409823423=value
+
+[ section6 ]
+; comment after value
+key1=value # comment
+key2=value      # comment rather set apart
+key3=value      #      comment rather set apart 2
+key4=value;comment with  some   spaces    inside      them
+key5=;comment with some escape sequences: \n, \r, \t, \\, \"
+key6= ; "quoted comment"
+key7=value ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+key8=value ################################
+key9=value ;
+key10=value                               ;
+
+[section7; ]
+; more values and a bit of everything else
+key1=["bracketed value"]
+key2=["bracketed value with = and ; comment"]
+key3=======================================
+key4=0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+key5=\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+key6=                                                                                                                                                                                                                                                                               value
+key7=
+                                                                                                                                                                  key8=value
+key9=__________________________________________
+key10=♥♥♥♥♥♥♥♥♥♥♥♥♥♥
+
+[                                   section8                                   ]
+;blank lines
+
+key1=value
+
+key2=value
+
+
+key3=value
+
+
+
+key4=value
+
+
+
+
+key5=value
+
+
+
+
+
+key6=value
+
+
+
+
+
+
+key7=value
+
+
+
+
+
+
+
+key8=value
+
+
+
+
+
+
+
+
+key9=value
+
+
+
+
+
+
+
+
+
+key10=value
+
+
+
+
+
+
+
+
+
+
+
+[section9] ; comment after section name
+; this section contains 20 keys because the next section will contain 0 keys
+key1=value
+key2=value
+key3=value
+key4=value
+key5=value
+key6=value
+key7=value
+key8=value
+key9=value
+key10=value
+key11=value
+key12=value
+key13=value
+key14=value
+key15=value
+key16=value
+key17=value
+key18=value
+key19=value
+key20=value
+
+          [section10: an empty section]
+;

@@ -1,0 +1,7 @@
+; merging with self is ignored
+
+[s]
+a=1
+b=2
+
+;!merge s

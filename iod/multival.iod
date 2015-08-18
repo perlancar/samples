@@ -1,0 +1,8 @@
+[section1]
+name=value
+name=value2
+
+[section2]
+name=!j null
+name="one\ntwo"
+name=three

@@ -1,0 +1,9 @@
+[section1]
+foo=1
+bar="monkey"
+
+[section2]
+baz =!e 1+1
+qux =!e "grease" . val("section1.bar")
+quux=!e val("qux") . " " . val('baz')
+

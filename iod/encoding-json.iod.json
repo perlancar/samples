@@ -1,0 +1,26 @@
+{
+   "section" : {
+      "json1" : true,
+      "json2" : null,
+      "json3" : "This is a\ntwo line string",
+      "json3b" : "This is a\ntwo line string",
+      "json4" : [
+         "This",
+         "is",
+         "an",
+         "array"
+      ],
+      "json4b" : [
+         "This",
+         "is",
+         "an",
+         "array"
+      ],
+      "json5" : {
+         "A" : "hash"
+      },
+      "json5b" : {
+         "A" : "hash"
+      }
+   }
+}

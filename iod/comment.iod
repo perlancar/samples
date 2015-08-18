@@ -1,0 +1,21 @@
+; unindented comment line
+; another line
+
+# unindented comment line using the pound sign
+# another line
+
+  ; indented comment line
+[section] ; at the end section line
+name=val ; after value
+name2="two\n;lines" ; after string value
+
+  # indented comment line
+[section2] # at the end section line
+name=val # after value
+name2="two\nlines" # after string value
+name3=[1,2,3,"#"] # after array
+name4={"a":1,"b":2,"c":"#"} # after hash
+
+;comment can contain any non-newline characters including =equal sign ;other #comment
+
+;[also a comment]

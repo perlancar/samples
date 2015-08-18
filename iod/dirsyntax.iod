@@ -1,0 +1,5 @@
+[foo]
+
+[bar]
+; mistake so common (missing semicolon prefix), some will allow it
+!merge foo

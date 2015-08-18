@@ -1,0 +1,7 @@
+; clash between subsection name and key name
+
+[section]
+sub=blah
+
+[section.sub]
+name=val

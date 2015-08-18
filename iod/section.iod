@@ -1,0 +1,16 @@
+; section can contain any non-newline character but "]"
+
+["section1]
+key=1
+
+[section2 ;not comment]
+key=2
+
+[section3=value]
+key=3
+
+[section4 #not comment]
+key=4
+
+[section5[]
+key=5

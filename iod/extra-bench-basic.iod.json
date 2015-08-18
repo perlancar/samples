@@ -1,0 +1,133 @@
+{
+   "section1" : {
+      "key1" : "1",
+      "key10" : "NaN",
+      "key2" : "Inf",
+      "key3" : "-100000",
+      "key4" : "123456789",
+      "key5" : "0.00000001",
+      "key6" : "123456789",
+      "key7" : "+1.2",
+      "key8" : "1.2345e10",
+      "key9" : "-1.2345e-4"
+   },
+   "section10: an empty section" : {},
+   "section2 with some spaces" : {
+      "key1" : "",
+      "key10" : "' '",
+      "key2" : "",
+      "key3" : "01string",
+      "key4" : "a string with spaces",
+      "key5" : "01Another String With Spaces",
+      "key6" : "a quite long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string long string",
+      "key7" : "A quoted (JSON) string with some escape sequences like \n, \t, \r, and \b. Also \" and \\",
+      "key8" : "An unquoted (raw) string will not interpret escape sequences like \\n, \\t, \\r, and \\b. Also \\\" and \\\\. It can also freely contain =, ', \"",
+      "key9" : "13823912894392850485040598092830923804982342384092382049384280482938409234092380498234820398409283049823"
+   },
+   "section3" : {
+      "key1" : [
+         "value",
+         "value"
+      ],
+      "key10" : "value",
+      "key2" : "value",
+      "key3" : "value",
+      "key4" : "value",
+      "key5" : "value",
+      "key6" : "value",
+      "key7" : "value",
+      "key8" : "value",
+      "key9" : "value"
+   },
+   "section4 with some rather long string as the section name" : {
+      "key" : [
+         "value1",
+         "value2",
+         "value3",
+         "value4",
+         "value5"
+      ],
+      "key2" : [
+         "value21",
+         "value22",
+         "value23",
+         "value24",
+         "value25"
+      ]
+   },
+   "section5" : {
+      "\"key5 with quotes\\" : "\\\\\"=value",
+      "key1" : "value",
+      "key10 0938384385764365345453495839478234762376823409823423" : "value",
+      "key2 with some spaces inside" : "value",
+      "key3 with some spaces inside" : "value with some spaces too",
+      "key4 with some escape sequences \\r\\n" : "value",
+      "key5 with escaped \\" : "=value",
+      "key6 with some long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name long name" : "value",
+      "key7 key name can contain anything but equal sign, including ', ;, [, ], or \"" : "value",
+      "key8_some_underscored_name" : "value",
+      "key9SomeCamelCasedName" : "value"
+   },
+   "section6" : {
+      "key1" : "value",
+      "key10" : "value",
+      "key2" : "value",
+      "key3" : "value",
+      "key4" : "value",
+      "key5" : "",
+      "key6" : "",
+      "key7" : "value",
+      "key8" : "value",
+      "key9" : "value"
+   },
+   "section7;" : {
+      "key1" : [
+         "bracketed value"
+      ],
+      "key10" : "♥♥♥♥♥♥♥♥♥♥♥♥♥♥",
+      "key2" : [
+         "bracketed value with = and ; comment"
+      ],
+      "key3" : "======================================",
+      "key4" : "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+      "key5" : "\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\",
+      "key6" : "value",
+      "key7" : "",
+      "key8" : "value",
+      "key9" : "__________________________________________"
+   },
+   "section8" : {
+      "key1" : "value",
+      "key10" : "value",
+      "key2" : "value",
+      "key3" : "value",
+      "key4" : "value",
+      "key5" : "value",
+      "key6" : "value",
+      "key7" : "value",
+      "key8" : "value",
+      "key9" : "value"
+   },
+   "section9" : {
+      "key1" : "value",
+      "key10" : "value",
+      "key11" : "value",
+      "key12" : "value",
+      "key13" : "value",
+      "key14" : "value",
+      "key15" : "value",
+      "key16" : "value",
+      "key17" : "value",
+      "key18" : "value",
+      "key19" : "value",
+      "key2" : "value",
+      "key20" : "value",
+      "key3" : "value",
+      "key4" : "value",
+      "key5" : "value",
+      "key6" : "value",
+      "key7" : "value",
+      "key8" : "value",
+      "key9" : "value"
+   }
+}

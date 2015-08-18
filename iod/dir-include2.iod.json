@@ -1,0 +1,9 @@
+{
+   "GLOBAL" : {
+      "val" : [
+         "from b2",
+         "from b",
+         "from main"
+      ]
+   }
+}

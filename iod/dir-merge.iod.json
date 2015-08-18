@@ -1,0 +1,28 @@
+{
+   "alice" : {
+      "bonus" : "100",
+      "non-remote" : "0",
+      "office" : "bandung",
+      "salary" : "1000",
+      "senior" : "1"
+   },
+   "bob" : {
+      "non-remote" : "0",
+      "office" : "bandung",
+      "overtime" : "1",
+      "salary" : "1000"
+   },
+   "charlie" : {
+      "office" : "jakarta",
+      "salary" : "1400"
+   },
+   "common" : {
+      "non-remote" : "0",
+      "office" : "bandung",
+      "salary" : "1000"
+   },
+   "rudi" : {
+      "office" : "yogyakarta",
+      "salary" : "800"
+   }
+}

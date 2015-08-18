@@ -1,0 +1,4 @@
+[section]
+; foo
+name1=!base64 YmFy
+name2=!base64 Zm9vIGJhcg== ; foo bar

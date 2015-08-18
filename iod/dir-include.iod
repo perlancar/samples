@@ -1,0 +1,6 @@
+[section1]
+;!include "dir-include-child.iod"
+
+[section2]
+;!include dir-include-child.iod
+baz=3

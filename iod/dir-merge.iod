@@ -1,0 +1,22 @@
+[common]
+salary=1000
+office=bandung
+non-remote=0
+
+;!merge common
+
+[alice]
+bonus=100
+senior=1
+
+[bob]
+overtime=1
+
+[charlie]
+salary=1400
+office=jakarta
+
+;!merge
+[rudi]
+salary=800
+office=yogyakarta
