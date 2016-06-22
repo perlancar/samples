@@ -1,0 +1,45 @@
+
+The following is a summary of command options for this script and its basic usage. 
+
+Usage: ioncube_encoder.sh [-C | -L | -O] [-4 | -5 | -53 | -54 | -55 | -56 ] [-x86 | -x86-64] <encoder options>
+
+Encoder Version (optional):
+-O : Use Obsolete Encoder (v7.0)
+-L : Use Legacy Encoder (v8.3)
+-C : Use Current Encoder (v9.0) - Default
+
+PHP Languages:
+-4 : Encode file in PHP 4
+-5 : Encode file in PHP 5
+-53 : Encode file in PHP 53
+-54 : Encode file in PHP 54
+-55 : Encode file in PHP 55
+-56 : Encode file in PHP 56
+
+Architecture (optional):
+-x86 : Run the 32-bit Encoder
+-x86-64 : Run the 64-bit Encoder
+
+-h : Display this help and exit. 
+If -h is specified before a language has been selected, help will be displayed by the script.
+if -h is specified after a language has been selected, help will be displayed by the Encoder.
+
+If an Encoder version is not selected, the Current Encoder (9.0) will be selected.
+If a PHP language is not selected, the script will exit.
+If an architecture is not selected, the script will run the Encoder that matches your system architecture.
+
+Once an unknown option is selected, the script will pass the remaining options to the Encoder.
+You cannot select more than one Encoder version, PHP language or Architecture.
+Script will exit should you try to run the 64-bit Encoder on a 32-bit system.
+
+Usage examples:
+
+Current 64-bit Encoder, encoded in PHP 5.6
+  ./ioncube_encoder.sh -C -x86-64 -56 source_file.php -o target_file.php
+
+Current 64-bit Encoder, encoded in PHP 5.4. Encoder displays help.
+  ./ioncube_encoder.sh -C -x86-64 -54 -h
+
+Legacy 32-bit Encoder, encoded in PHP 5.3
+  ./ioncube_encoder.sh -L -x86 -53 
+
