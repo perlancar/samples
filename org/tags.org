@@ -1,0 +1,7 @@
+text before first headline
+
+* headline1  :tag1:tag2:
+content of headline1
+* TODO headline2                                                  :tag2:tag2:
+content of headline2
+** headline2.1                                                        :tag_3:

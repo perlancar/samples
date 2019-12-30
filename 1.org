@@ -1,3 +1,5 @@
+some text before the first headline.
+
 * header1                                                               :tag:
 contains an internal link to another part of the document [[blah]]
 * header2 [#A] [20%]
