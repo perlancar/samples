@@ -1,0 +1,17 @@
+#+TODO: TODO PARTIAL WAITING PENDING | OLD DONE CANCELLED RETIRED DELEGATED FAILED DUPE
+#+TODO: BUG | NOTBUG FIXED CANTREPRO WONTFIX CANTFIX
+#+TODO: IDEA WISHLIST | DONE CANCELLED REJECTED
+
+* category1/subcat1 [0/2]
+** TODO undone todo1                                                   :tag1:
+** PARTIAL undone todo2                                                :tag2:
+* category1/subcat2 [0/0]
+** DONE done todo3                                                :tag1:tag2:
+** CANCELLED TODO done todo4                                           :tag2:
+* category2/subcat1 [0/0]
+** BUG undone todo5
+** WAITING undone todo6
+* category2/subcat2 [0/0]
+** IDEA undone todo7                                               :wishlist:
+** WISHLIST undone todo8                                           :wishlist:
+** REJECTED WISHLIST done todo9                               :wishlist:tag2:
