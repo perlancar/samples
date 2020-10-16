@@ -1,0 +1,6 @@
+#+TODO: TODO | DONE CANCELLED
+#+TODO: BUG | DUPE NOTBUG FIXED CANTREPRO WONTFIX CANTFIX
+
+* BUG door won't open
+* DONE fuel empty
+* WONTFIX car won't go over 120mph
